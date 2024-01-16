@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/AcuminBdItPro.otf",
+      "sha1": "d2a56b3b2b41735f6b4e98444b6f46763cd47f37"
+    },
+    {
+      "path": "src/assets/fonts/AcuminBdPro.otf",
+      "sha1": "a928378e2677f3baac47550350d994ad4bdbee4e"
+    },
+    {
+      "path": "src/assets/fonts/AcuminItPro.otf",
+      "sha1": "992a77e549ca4a773c5b1c8a4d84c94108a75d51"
+    },
+    {
+      "path": "src/assets/fonts/AcuminRPro.otf",
+      "sha1": "71d7d7eddaba5d17cbd27387e00b274fe84e0b16"
+    },
+    {
+      "path": "src/assets/fonts/BebasNeue-Regular.ttf",
+      "sha1": "ac208c2416e2ad9f6324697b98b8fc7ccb338f9e"
+    },
+    {
+      "path": "src/assets/fonts/PermanentMarker-Regular.ttf",
+      "sha1": "52be1e61e2a236736acb60aa912cbcdf2c01f7c1"
+    }
+  ]
+}
