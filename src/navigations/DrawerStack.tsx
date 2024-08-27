@@ -1,18 +1,22 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Home from '../screens/Home/Home';
-import Refreshment from '../screens/Refreshment/Refreshment';
-import Account from '../screens/Account/Account';
-import Membership from '../screens/Membership/Membership';
 import TabStack from './TabStack';
+import Reservations from '../screens/Reservations/Reservations';
+import MainStack from './MainStack';
 
 const Drawer = createDrawerNavigator();
 
 const DrawerStack = function DrawerStack() {
   return (
-    <Drawer.Navigator screenOptions={{headerShown: false}}>
-      <Drawer.Screen name="Home" component={TabStack} />
-      <Drawer.Screen name="Membership" component={TabStack} />
+    <Drawer.Navigator
+      screenOptions={{
+        headerStyle: {
+          //backgroundColor: '#242729',
+        },
+      }}>
+      <Drawer.Screen name="Home" component={MainStack} />
+      <Drawer.Screen name="Reservations" component={Reservations} />
     </Drawer.Navigator>
   );
 };

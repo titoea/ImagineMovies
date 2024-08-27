@@ -1,20 +1,19 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TabStack from './TabStack';
-import DrawerStack from './DrawerStack';
 
 const Stack = createNativeStackNavigator();
 
-const AuthStack = function AuthStack() {
+const MainStack = function AuthStack() {
   return (
-    <Stack.Navigator initialRouteName="DrawerStack" screenOptions={{}}>
+    <Stack.Navigator initialRouteName="TabStack" screenOptions={{}}>
       <Stack.Screen
-        name="DrawerStack"
-        component={DrawerStack}
+        name="TabStack"
+        component={TabStack}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
 };
 
-export default AuthStack;
+export default MainStack;

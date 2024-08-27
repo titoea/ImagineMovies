@@ -13,9 +13,10 @@ const TabStack = function TabStack() {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerLeft: () => {
-          return <HamburgerIcon color="#DCDCDC" size={16} />;
-        },
+        headerShown: false,
+        // headerLeft: () => {
+        //   return <HamburgerIcon color="#DCDCDC" size={16} />;
+        // },
       }}>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Membership" component={Membership} />

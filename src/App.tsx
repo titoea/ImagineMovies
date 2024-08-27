@@ -1,16 +1,16 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AppNavigationContainer from './navigations/AppNavigationContainer';
 import AuthProvider from './providers/AuthProvider/AuthProvider';
-
-const Stack = createNativeStackNavigator();
+import ThemeProvider from './providers/ThemeProvider/ThemeProvider';
 
 const App = () => {
   return (
     <AuthProvider>
-      <AppNavigationContainer />
+      <ThemeProvider>
+        <AppNavigationContainer />
+      </ThemeProvider>
     </AuthProvider>
   );
 };
